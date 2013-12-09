@@ -12,8 +12,9 @@ A demo contact management app made using [Grape](https://github.com/intridea/gra
 5. Boot: `$ bundle exec rackup`
 6. Visit http://localhost:9292
 
-# Notes
+# Warnings
 
 - not meant for production
 - only tested in Chrome
+- no form validations
 - rough edges abound!

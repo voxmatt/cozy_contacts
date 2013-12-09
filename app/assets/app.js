@@ -74,7 +74,7 @@ function UserViewModel() {
       self.notify("The user was created successfully!");
       self.isUserFormVisible(false);
     }).fail( function(data) {
-      self.notify("There was a problem creating the user. Please try again.", "error")
+      self.notify("Whoops. Make sure the required fields are filled and try again.", "error")
     })
   }
 
