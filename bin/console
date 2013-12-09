@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'irb'
+require './config/application'
+IRB.start(__FILE__)

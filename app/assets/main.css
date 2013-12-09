@@ -1,0 +1,197 @@
+/* BASIC STRUCTURE */
+
+@font-face{
+  font-family: CozyCons;
+  src: url('https://www.cozy.co/wp-content/themes/cozy/assets/fonts/CozyCons-3a4fd216f7aee236d1ee9bb1b40c2996.woff');
+}
+
+html{
+  background:#eee;
+}
+body{
+  background:inherit;
+  font-family:lato, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+a{color:#21AA9E;}
+
+/* LOGO & NOTIFICATIONS*/
+
+.logo{
+  padding-top:20px;
+  width:100%;
+  text-align:center;
+  font-size: 26px;
+  line-height: 50px;
+  vertical-align:top;
+  text-decoration: none;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  color:#21AA9E;
+  font-family:lato, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight:300;
+}
+.logo:before{
+  font-size: 100px;
+  color: #FFA300;
+  font-family: "CozyCons";
+  content: "\f110";
+  font-weight:100;
+  margin-right:5px;
+}
+
+.notifications{
+  width: 100%;
+  display:none;
+  text-align: center;
+  z-index: 10;
+  position: fixed;  
+}
+.notifications p{
+  display: inline-block;
+  padding: 3px 10px;
+  color: #FFF;
+  background-color: #21AA9E;
+  border: 2px solid #1B8D83;
+  margin: 0 auto;
+  z-index: 10;
+}
+.notifications.error-message p{
+  background: #C52C2C;
+  border-color: #850A0A;
+}
+
+.new-contact-link,
+.edit-link{
+  opacity:.7;
+  transition:opacity .3s;
+}
+.new-contact-link{
+  position:absolute;
+  font-size:21px;
+  right: 30px;
+  top: 31px;
+}
+.new-contact-link:hover,
+.edit-link:hover{
+  color:#21AA9E;
+  opacity:1;
+}
+
+.btn-success {
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: #21AA9E;
+  border: 2px solid #1B8D83;
+}
+.btn-success:hover {
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: #1B8D83;
+  border: 2px solid #1B635C;
+}
+
+/* FORMS */
+
+.user-create form{
+  margin-bottom:50px;
+}
+
+.form-group{
+  margin-bottom:10px;
+}
+
+.form-group label{
+  text-transform: uppercase;
+  color: #bbb;
+  font-size: 13px;
+  font-weight: 500;
+}
+.user-create .form-group label{
+  color: #666;
+}
+
+.form-control{
+  border: 2px solid #CCC;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}
+
+.cancel-link{
+  float:right;
+  color:#BB3B3B;
+  margin-top:5px;
+  transition: color .3s;
+}
+.cancel-link:hover{
+  color:red;
+}
+
+
+/* CONTACT LIST */
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 60px;
+  border: 3px solid #CCC;
+}
+.list-group-item:first-child,
+.list-group-item:last-child{
+  border-radius:0;
+}
+
+.media-object{
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  border: 2px solid #FFA300;
+}
+.media-object p{
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  color:#FFA300;
+  font-weight: 300;
+  letter-spacing: 4px;
+  vertical-align: middle;
+  line-height: 56px;
+  margin-left:2px;
+}
+
+.media-body{
+  padding-left:10px;
+}
+.media-body p{
+  margin:0;
+}
+.media-heading{
+  margin:3px 0 2px 0;
+  color:#555;
+  display:inline;
+}
+.title-line{
+  display:inline;
+  position: relative;
+  color:#888;
+  font-family:helvetica;
+  font-style:italic;
+  font-weight:300;
+  text-transform: lowercase;
+  margin-left:2px;
+  top:-1px;
+  font-size:13px;
+}
+
+footer{
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .contact-manager{padding:0px;}
+  .user-create{padding:20px; box-sizing:border-box;}
+  .list-group{border-left:0; border-right:0;}
+}
