@@ -16,5 +16,5 @@ A demo contact management app made using [Grape](https://github.com/intridea/gra
 
 - not meant for production
 - only tested in Chrome
-- no client side validations
+- haven't gotten around to validations
 - rough edges abound!
