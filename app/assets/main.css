@@ -15,11 +15,30 @@ body{
 a{color:#21AA9E;}
 
 /* LOGO & NOTIFICATIONS*/
-
 .logo{
-  padding-top:20px;
+  padding:20px 0;
   width:100%;
   text-align:center;
+}
+
+.logo-image{
+  width:100px;
+  height:50px;
+  display:inline-block;
+  overflow:hidden;
+}
+.logo-image:before{
+  font-size: 100px;
+  line-height: 50px;
+  color: #FFA300;
+  font-family: "CozyCons";
+  content: "\f110";
+  font-weight:100;
+  margin-right:5px;
+}
+.logo-text{
+  display:inline-block;
+  margin-left:10px;
   font-size: 26px;
   line-height: 50px;
   vertical-align:top;
@@ -30,14 +49,6 @@ a{color:#21AA9E;}
   color:#21AA9E;
   font-family:lato, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight:300;
-}
-.logo:before{
-  font-size: 100px;
-  color: #FFA300;
-  font-family: "CozyCons";
-  content: "\f110";
-  font-weight:100;
-  margin-right:5px;
 }
 
 .notifications{
@@ -188,7 +199,7 @@ a{color:#21AA9E;}
   display:inline;
   position: relative;
   color:#888;
-  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style:italic;
   font-weight:300;
   text-transform: lowercase;
