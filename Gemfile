@@ -10,8 +10,6 @@ gem 'puma'
 
 group :development do
   gem 'sqlite3'
-  gem 'guard'
-  gem 'guard-rack'
 end
 
 group :test do
