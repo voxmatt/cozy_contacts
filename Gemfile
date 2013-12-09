@@ -7,4 +7,7 @@ gem 'grape-entity'
 gem 'sequel'
 gem 'sprockets', '~> 2.0'
 gem 'puma'
+
 gem 'sqlite3'
+gem 'guard'
+gem 'guard-rack'
